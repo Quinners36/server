@@ -44,7 +44,7 @@ $(document).ready(function(){
       user = firebase.auth().currentUser;
 
       if (user) {
-          window.location = 'Home.html';
+          window.location = '/Home';
       } else {
           // No user is signed in.
       }
@@ -53,7 +53,7 @@ $(document).ready(function(){
 
   $('#signout').click(function(){
         firebase.auth().signOut().then(function() {
-            window.location ='index.html'
+            window.location ='/'
         }, function(error) {
             // An error happened.
         });
