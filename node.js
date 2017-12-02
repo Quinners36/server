@@ -11,7 +11,7 @@ fs.readFile('index.html', function (err, html)
         response.writeHeader(200, {"Content-Type": "text/html"});  // <-- HERE!
         response.write(html);  // <-- HERE!
         response.end();  
-    }).listen(80);
+    }).listen(5000);
 });
 /*
 var express = require("express");
